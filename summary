@@ -1,0 +1,4 @@
+Question: softmax loss的缺陷: 类间不够分离，类内不够紧凑
+Methods:
+1. sphereface
+   
