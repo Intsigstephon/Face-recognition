@@ -3,6 +3,29 @@ Question: softmax loss的缺陷: 类间不够分离，类内不够紧凑
 因为训练集合的人脸数和测试集合的人脸数,并不是完全一致,导致直接用softmax, 固定输出类别个数的方式, 在新的测试集上面就会遇到问题.
 换个思路, 就是只能够提取softmax之前的那层的特征, 作为人脸的特征表示.
 
+1:1:  人脸验证, 一般用于人证比对,门禁,解锁等等应用场景;
+
+1:N:  Assume that the person is the one that included in the training set.
+      a) 和谁最像;     Top-1
+      b) 和那几个最像:  Top-N
+      应用场合: 辅助搜索, 疑犯追踪, 身份查重
+      
+1:N+1: Maybe not in the training set.
+       应用场合: 考勤, VIP识别, 黑名单监控
+
+近些年人脸识别方法发展脉络:
+DeepFace
+FaceID1
+FaceID2
+FaceID2+
+FaceNet: 三元组, triplet loss
+DeepID-2+
+Deep FR
+center loss\contrastive loss\triplet loss
+
+Large margin softmax: SphereFace\NormFace\CosFace\ArcFace
+
+
 Methods:
 1. sphereface
    
