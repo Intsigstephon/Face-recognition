@@ -28,4 +28,11 @@ Large margin softmax: SphereFace\NormFace\CosFace\ArcFace
 
 Methods:
 1. sphereface
+
+Loss: 
+contrastive loss和triplet loss
+
+基于角/余弦边际的loss:
+Large-margin softmax, 其实就是L-softmax
+
    
